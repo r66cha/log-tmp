@@ -4,6 +4,8 @@
 
 ---
 
+### For run and look how logs look like:
+
 ```bash
 make run
 ```
