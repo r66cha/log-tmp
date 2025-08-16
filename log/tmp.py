@@ -41,3 +41,10 @@ def foo():
 
     if log.isEnabledFor(logging.INFO):
         log.info("Month cash: %s", expensive_foo())
+
+    try:
+        1 / 0
+    except Exception as e:  # ZeroDivisionError
+        log.exception("Error")
+        # log.error("Error", exc_info=True)
+        # log.error("Error: %r", e)
